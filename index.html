@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoodie Moodie</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 750px;
+            margin: auto;
+            font-family: Arial, sans-serif;
+        }
+        table{
+            border-spacing: 0px;
+            max-width: 75%;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.137);
+        }
+        h1{
+            font-size: 16px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.452);
+            width: 400px;
+            margin: auto;
+            font-weight: 600;
+            padding: 5px 0px 10px 0px;
+            color: rgba(0, 0, 0, 0.747);
+        }
+        h2{
+            font-size: 18px;
+            margin: 1em 0em 2em 2em;
+        }
+        .p-1, .p-2{
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 1.5em;
+            color: rgba(0, 0, 0, 0.678);
+            padding: 0px 3px 0px 3px;
+        }
+        .p-1{
+            word-spacing: 0.2em; 
+            line-height: 1.5em;
+        }
+        .p-2{
+            margin-top: 2em;
+            line-height: 1.4em;
+            word-spacing: 0.1em;
+        }
+        .span-1{
+            color: rgba(0, 0, 0, 0.904);
+        }
+        .image-1{
+            max-width: 150px;
+        }
+        .image-2{
+            max-width: 200px;
+        }
+        .image-3, .image-4, .image-5{
+            max-width: 150px;
+        }
+        .image-3{
+            margin-left: 1.5em;
+        }
+        .image-4{
+            margin: 0em 1.5em 0em 1.5em;
+        }
+        .main-1 td{
+            text-align: center;
+        }
+        .button-1{
+            display: block;
+            margin: 1em auto 0em auto;
+        }
+        .button-2{
+            display: inline-block;
+            margin: 1em 4em 0em 5em;
+        }
+        .button-3{
+            margin: 1em 4em 0em 4.2em;
+        }
+        .button-4{
+            margin: 1em 0em 0em 4em;
+        }
+        button{
+            width: 5em;
+            height: 2em;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.842);
+            color: white;
+            transition: all 0.3s ease;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        button:hover{
+            background-color: rgba(0, 0, 0, 0.568);
+            cursor: pointer;
+        }
+        .footer{
+            text-align: center;
+        }
+        .footer td p{
+            font-size: 12px;
+            font-weight: 500;
+            color: rgba(11, 11, 12, 0.774);
+        }
+        .footer td p a {
+            text-decoration: none;
+            color: rgba(0, 0, 255, 0.747);
+        }
+        .footer td p a:hover{
+            text-decoration: underline;
+            color: rgba(16, 16, 172, 0.877);
+        }
+        /* MOBILE*/
+        @media (max-width: 600px) {
+            body{
+                width: 100%;
+                overflow-x: hidden;
+            }
+            table{
+                max-width: 100%;
+                margin: auto;
+                overflow-x: hidden;
+            }
+            .image-2{
+                max-width: 150px;
+            }
+            .image-3, .image-4, .image-5{
+                max-width: 100px;
+                display: inline-block;
+                margin: 0 0.9em;
+            }
+            .button-2{
+                margin: 1em 0em 0em 2.5em;
+            }
+            .button-3{
+                margin: 1em 0em 0em 4.7em ;
+            }
+            .button-4{
+                margin: 1em 0em 0em 4.5em;
+            }
+            h1{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.329);
+            }
+            .p-1{
+                word-spacing: normal;
+                font-size: 16px;
+            }
+            button:focus{
+                background-color: rgba(136, 141, 131, 0.288);
+                color: rgba(0, 0, 0, 0.692);
+            }
+        }
+        /*ipad*/
+        @media (min-width: 600px) and (max-width: 1024px) {
+            body{
+                width: 100%;
+                overflow-x: hidden;
+            }
+            table{
+                max-width: 100%;
+                margin: auto;
+                min-height: 100vh;
+            }
+            .image-3, .image-4, .image-5{
+                max-width: 150px;
+            }
+            .image-3{
+                margin: 0em 4em 0em 4em;
+            }
+            .image-4{
+                margin: 0em 4em 0em 2em;
+            }
+            .image-5{
+                margin-left: 1em;
+            }
+            .button-2{
+                margin-left: 7.7em;
+                margin-right: 6em;
+            }
+            .button-3{
+                margin-left: 7.7em;
+                margin-right: 6em;
+            }
+            .button-4{
+                margin-left: 6.5em;
+            }
+            button:focus{
+                background-color: rgba(136, 141, 131, 0.288);
+                color: rgba(0, 0, 0, 0.692);
+            }
+            .p-1, .p-2{
+                font-size: 16px;
+            }
+            h1, h2{
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!--head-->
+        <tr class="header">
+            <th>
+                <h1>Special Offer for Our Loyal Clients: 25% Off!</h1>
+            </th>
+        </tr>
+        <!--main-->
+        <tr class="main">
+            <td>
+                <img src="images/LOGO.png" alt="logo for hoodie moodie" class="image-1">
+                <p class="p-1">As a token of appreciation for your loyalty to our store, we’ve created a special offer just for
+                     you a  
+                     <span class="span-1">25% discount!</span>
+                     Simply click the button below and use the code:
+                      <span class="span-1">LOYAL </span>
+                      at checkout.
+                    Don’t miss out on the chance to grab your favorite hoodie! Remember,
+                    <span class="span-1"> "Your mood, your hoodie".</span>
+                    Enjoy shopping with us!</p>
+            </td>
+        </tr>
+
+        <tr class="main-1">
+            <td>
+                <img src="images/black hoodie.png" alt="black hoodie" class="image-2">
+                <button class="button-1">Buy Now</button>
+            </td>
+        </tr>
+
+        <tr class="main-2">
+            <td>
+                <h2>You may also like:</h2>
+                <img src="images/blue hoodie.png" alt="blue hoodie" class="image-3">
+                <img src="images/black-with-grey-.png" alt="black with grey hoodie" class="image-4">
+                <img src="images/rose hoodie.png" alt="rose hoodie" class="image-5">
+            </td>
+        </tr>
+        <tr class="main-3">
+            <td>
+                <a href="#"> <button class="button-2">Buy Now</button></a>
+                <a href="#"> <button class="button-3">Buy Now</button></a>
+                <a href="#"> <button class="button-4">Buy Now</button></a>
+            
+            <p class="p-2">Thank you for being one of our amazing and loyal customers, we hope to continue meeting your expectations by offering you a good quality</p>
+        </td>
+        </tr>
+        <!--footer-->
+        <tr class="footer">
+            <td>
+                <p>STORE:
+                    <a href="#">HoodieMoodie.com</a>
+                </p>
+                <p>Support:<a href="#">HoodieMoodie@support.com</a></p>
+                <p>Copyright © 2024 HoodieMoodie. All rights reserved.</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
